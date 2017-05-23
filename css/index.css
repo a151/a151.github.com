@@ -1,0 +1,342 @@
+body{ font-family:"宋体"; ;color:#000000;}
+*{margin: 0;padding: 0;}
+.fl{float:left}
+.fr{float:right}
+a{text-decoration: none}
+img{display:block;}
+ul,ol{list-style: none}
+.clearfix{zoom:1;}
+.clearfix:after{content: "";display: block;clear: both}
+i{
+    font-style: normal;
+
+}
+.one img{
+    width: 20rem;
+    height: 3.937rem;
+}
+body{
+    height: 10000px;
+}
+.head{
+    width: 20rem;
+    height: 3.125rem;
+    background: #f4f4f4;
+}
+.btn{
+      width: 3.75rem;
+      height:1.75rem;
+      margin-left: 0.718rem;
+      margin-top: 0.625rem;
+      box-shadow:0rem 0rem 0.132rem 0.093rem #e8e8e8;
+      outline: none;
+    border: 1px solid #e7e7e7;
+      text-align: center;
+       line-height:1.75rem ;
+       color: #666666;
+       font-size:0.687rem ;
+       border-radius:80px 20px 20px 80px  ;
+
+}
+.head i img{
+    width:4.625rem;
+    height:1.218rem;
+    margin-left: 3.125rem;
+    margin-top: 0.687rem;
+}
+.guan img{
+    width:20rem;
+    height:8.343rem;
+}
+.guan{
+    position: relative;
+}
+.btn-ul{
+     position: absolute;
+     bottom:-0.625rem;
+     left:8.593rem;
+
+}
+.btn-ul li{
+    width: 0.312rem;
+    height: 0.312rem;
+    background: #a9a9a9;
+    border-radius: 50%;
+    margin-left: 0.312rem;
+}
+.sim-logo{
+    width:2.5rem;
+    height:2.5rem;
+    background:  red ;
+    border-radius:50% ;
+    position: relative;
+}
+.sim-logo img{
+    width:1.187rem;
+    height: 1.187rem;
+    position: absolute;
+    top:0.742rem;
+    left: 0.742rem
+;
+}
+.sim-ul{
+     padding-left: 0.625rem;
+    width: 18.75rem;
+    height: 12rem;
+}
+.sim-li{
+    padding-left: 1.031rem;
+    padding-right: 1.031rem;
+    margin-top: 1.25rem;
+}
+.txt-a{
+    margin-top: 0.531rem;
+    margin-left: 0.395rem;
+}
+.txt-a a{
+     color: #999999;
+     font-size: 0.718rem;
+
+}
+.nac{
+    width:18.75rem;
+    height: 1.625rem;
+    border-bottom: 0.125rem solid #dcdcdc;
+    margin-left: 0.625rem;
+    margin-bottom: 0.937rem;
+}
+.nac .juhua{
+    height: 0.937rem;
+    border-left:0.125rem solid #d51938 ;
+    padding-left: 0.531rem;
+    padding-top: 0.125rem;
+    padding-bottom: 0.062rem;
+    font-size: 0.812rem;
+    color: #333333;
+}
+.nac .num1{
+    height: 0.937rem;
+    padding-left: 0.531rem;
+    padding-top: 0.125rem;
+    padding-bottom: 0.062rem;
+    font-size: 0.812rem;
+    color: #333333;
+}
+.cen-ol{
+     margin-left: 0.625rem;
+}
+.cen-li{
+     width: 18.75rem;
+    height: 3.75rem;
+    background: #f4f4f4;
+
+}
+ .cen-ol .cen-li .number{
+      width: 1.875rem;
+      height:3.75rem ;
+     background: #e00202;
+     font-size: 1.093rem;
+     color: #fff;
+     text-align: center;
+     line-height: 3.75rem;
+
+ }
+ .img-i img{
+      width: 5.687rem;
+      height: 3.75rem;
+ }
+ .meney{
+     width:4.562rem;
+     padding-left: 0.625rem;
+     padding-top: 0.937rem;
+     padding-bottom: 0.937rem;
+ }
+ .meney .show{
+       font-size: 0.687rem;
+       color: #999;
+ }
+ .meney h6 span{
+     font-size: 0.687rem;
+     color: #999;
+     line-height: 0.937rem;
+ }
+.meney h6 span i{
+    text-decoration: line-through;  
+}
+.buy{
+      padding-top: 1.25rem;
+      padding-bottom: 1.687rem;
+      padding-right: 0.937rem;
+}
+.buy span a{
+    color: #d51938;
+    font-size: 0.75rem;
+
+}
+.buy span{
+    margin-top: -0.312rem;
+}
+.buy i img{
+     width: 0.406rem;
+     height: 0.687rem;
+}
+.buy i{
+      padding-left: 0.562rem;
+
+}
+.cen-ol .cen-li{
+     margin-bottom: 0.625rem;
+}
+.link{
+     width: 18.75rem;
+     height: 2.5rem;
+      background: #f5f5f5;
+     margin-left: 0.625rem;
+     margin-bottom: 0.625rem;
+     text-align: center;
+}
+ .link a{
+      color: #666666;
+     font-size: 0.812rem;
+     line-height: 2.5rem;
+ }
+.sec{
+     margin-left: 0.625rem;
+     margin-bottom: 0.625rem;
+}
+.sec-h2{
+       width: 4.75rem;
+       height: 11.03rem;
+       background:#da3809 ;
+       text-align: center;
+       position: relative;
+}
+ .sec-h2 .sp{
+     line-height: 2.687rem;
+     color: #fff;
+     font-size: 0.812rem;
+ }
+.sec-h2 .logo-sec{
+    position: absolute;
+    left: -0.031rem;
+    bottom: 0;
+}
+.sec-h2 .logo-sec img{
+     width: 4.687rem;
+     height: 4.375rem;
+}
+.food-li{
+     width: 4.516rem;
+     height: 2.60rem;
+    border-top: 0.131rem solid #eeeeee;
+    border-left: 0.131rem solid #eeeeee;
+    text-align: center;
+}
+.food-li a{
+      line-height: 2.687rem;
+      color: #999999;
+      font-size: 0.781rem;
+}
+.food{
+     border-bottom:0.131rem solid #eeeeee;
+}
+.food-ul{
+    border-right:0.131rem solid #eeeeee;
+}
+.iphone{
+      width: 6.127rem;
+      height: 4.937rem;
+      text-align: center;
+      border-top: 0.131rem solid #eeeeee;
+      border-left: 0.131rem solid #eeeeee;
+      border-bottom: 0.131rem solid #eeeeee;
+}
+.iphone .iphone-i img{
+      width: 6.127rem;
+      height: 3.406rem;
+}
+.iphone .ios a{
+    color: #999999;
+    font-size: 0.718rem;
+}
+.three{
+    margin-left: 0.625rem;
+
+}
+.iphone-g{
+    border-right:0.131rem solid #eeeeee ;
+}
+.last{
+     width: 20rem;
+     height: 2.718rem;
+     background:#f8f8f8 ;
+     margin-top:0.937rem ;
+}
+.last-li-a{
+         padding-left:0.937rem ;
+         padding-top:0.737rem ;
+         padding-right: 1.468rem;
+}
+.last-li-b{
+    padding-top:0.737rem ;
+}
+.last-li-a a{
+         font-size: 0.812rem;
+          color: #333333;
+}
+.last-li-b a{
+    font-size: 0.812rem;
+    color: #333333;
+}
+.last-li-c i img{
+        width: 0.531rem;
+        height: 0.281rem;
+}
+.last-li-c span a{
+    font-size: 0.712rem;
+    color: #333333;
+}
+.last-li-c span{
+        margin-top: -0.2rem;
+}
+.last-li-c{
+      padding-top:0.837rem ;
+}
+.last-li-c .ccc{
+        padding-left: 0.531rem;
+        padding-top:0.337rem ;
+        padding-right: 0.937rem;
+
+}
+.foot-last{
+      width: 20rem;
+      height: 10.625rem;
+      background:#eeeeee ;
+
+}
+.foot-last .change span{
+          margin-right: 0.781rem;
+
+}
+.foot-last .change{
+     padding-top: 1.25rem;
+     margin-bottom: 0.937rem;
+     margin-left:6.65rem ;
+}
+.foot-last .change span a{
+         color: #333333;
+         font-size: 0.812rem;
+}
+.foot-last  h6{
+    color: #999999;
+     font-size: 0.562rem;
+     margin-left: 5.468rem;
+}
+.foo img{
+      width: 20rem;
+      height: 9.562rem;
+}
+.box{
+     width: 20.156rem
+;
+}
