@@ -3,7 +3,7 @@
 .red{
 	background:red;	
 }
-body{ font-family:"微软雅黑"; font-size:12px; color:#000000; min-width: 515px;}
+body{ font-family:"微软雅黑"; font-size:12px; color:#000000; min-width: 580px}
 *{margin: 0;padding: 0;}
 .fl{float:left}
 .fr{float:right}
@@ -11,7 +11,7 @@ a{text-decoration: none}
 img{display:block;}
 ul,ol{list-style: none}
 .clearfix{zoom:1;}
-.clearfix:after{content: "";display: block;clear: both}
+.clearfix:after{content: "";display: block;clear: both ;}
 .head .top{
 	height: 600px;
 	background: rgba(0,0,0,0.5);
@@ -150,7 +150,7 @@ ul,ol{list-style: none}
 		margin-top: 50px;
 	}
 }
-@media screen and (max-width: 783px){
+@media screen and (max-width: 928px){
 	#recom-btn{
 		width: 80%;
 		margin-top: 50px;
@@ -158,7 +158,7 @@ ul,ol{list-style: none}
 	#recom-btn span{
 		display: block;
 		width: 100%;
-		font-size: 18px;
+		font-size: 17px;
 		margin-left: 0;
 		margin-right: 0;
 	}
@@ -1082,7 +1082,7 @@ ul,ol{list-style: none}
 }
 .myMainInfo .myself .myText h3{
 	word-wrap:break-word;
-	margin-top: 50px;
+	margin-top: 30px;
 	margin-bottom: 26px;
 }
 .myMainInfo .myself .myText-g h3{
@@ -1093,10 +1093,11 @@ ul,ol{list-style: none}
 
 .myMainInfo .myself .myText p{
 	word-wrap:break-word;
+	font-size: 13px;
 }
 .image-c{
-	width: 240px;
-	height: 240px;
+	width: 200px;
+	height: 200px;
 }
 .col-center-block {
 	float: none;
@@ -1136,7 +1137,7 @@ ul,ol{list-style: none}
 	content: "";
 	color: #fff;
 	height: 100%;
-	width:88.5%;
+	width:85.5%;
 	background: rgba(0,0,0,0.5);
 	opacity: 0;
 	z-index: 100002;
@@ -1152,6 +1153,7 @@ ul,ol{list-style: none}
 	-o-transition: opacity 0.5s ease-in-out;
 	-ms-transition: opacity 0.5s ease-in-out;
 	transition: opacity 0.5s ease-in-out;
+	display: none;
 }
 
 
@@ -1162,7 +1164,9 @@ ul,ol{list-style: none}
 	opacity: 1;
 }
 
-
+.in-g{
+	margin-top: 40px;
+}
 .Intr-img-odd img{
 	transition: .7s all ease;
 }
@@ -1186,7 +1190,7 @@ ul,ol{list-style: none}
 	-o-transition: opacity 0.5s ease-in-out;
 	-ms-transition: opacity 0.5s ease-in-out;
 	transition: opacity 0.5s ease-in-out;
-
+    display:none ;
 }
 
 .Intr-img-odd:hover img{
@@ -1257,7 +1261,7 @@ ul,ol{list-style: none}
 	 color: #474b4d;
 	 margin-top: 30px;
 	 margin-bottom: 40px;
-	 font-size: 16px;
+	 font-size: 15px;
  }
 .form .btn-more{
 	width: 44px;
@@ -1425,7 +1429,7 @@ ul,ol{list-style: none}
 	padding-top: 20px;
 }
 .last div{
-	font-size: 14px;
+	font-size: 13px;
 	color:#999999;
 	transition: .3s all ease;
 }
@@ -1450,7 +1454,12 @@ ul,ol{list-style: none}
 		font-size: 13px;
 	}
 }
+@media  screen and (max-width:990px) {
 
+	.in-g{
+		margin-top: 10px;
+	}
+}
 @media  screen and (max-width:1125px) {
 	.last div .phone{
 		display: block;
@@ -1462,7 +1471,9 @@ ul,ol{list-style: none}
 		padding-left: 2%;
 		font-size: 12px;
 	}
+
 }
+
 @media  screen and (max-width:470px) {
 	.last div{
 		display:none;
@@ -1545,6 +1556,7 @@ ul,ol{list-style: none}
 }
 #skills p{
 	margin: 6px;
+	margin-left: 20px;
 }
 #skills p i{
 	font-style: normal;
@@ -1581,11 +1593,14 @@ ul,ol{list-style: none}
 .experience h5 p{
 	 padding-left: 40px;
 	 box-sizing: border-box;
+	font-size: 15px;
+
 }
 .experience h5 span{
 	padding-left: 70px;
 	display: block;
 	margin-bottom: 6px;
+	font-size: 13px;
 	box-sizing: border-box;
 }
 .experience .super-exper{
@@ -1597,17 +1612,22 @@ ul,ol{list-style: none}
 }
 .myText .hobby p{
 	color: #7a7a7a;
-	font-size: 14px;
-	padding-left: 40px;
+	padding-left: 20px;
 	box-sizing: border-box;
 }
-@media screen and (max-width:790px){
+@media screen and (max-width:842px){
    .myText .experience h5 span{
 	   display: none;
    }
   #skills p .del{
 	  display: none;
   }
+
+}
+@media screen and (max-width:770px){
+	#skills p{
+		margin-left: 25%;
+	}
 }
 .front .box-bottom a{
 	width: 70%;
