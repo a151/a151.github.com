@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LeeYan WebPage</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <script src="./jquery/jquery-1.12.3.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/vue.js"></script>
+</head>
+<body style="background:#f0f7fa;" >
+
+<div id="app">
+<canvas height="100%" width="100%" style="position: fixed; top: 0; left: 0; z-index: -1; opacity: 0.5;"  id="canvas">
+</canvas>
+
+<header class="row head">
+    <div class="col-xs-12 col-md-12 top">
+
+        <div id="head-top">
+            <i></i>
+            <a href="javascript:;" id="self" class="">SELF-INTRODUCTION</a>
+        </div>
+        <div id="topx" @click="show">
+          <i class="topx-one"></i>
+          <i class="topx-t"></i>
+          <i class="topx-two"></i>
+        </div>
+        <dl class="recom">
+            <dt>MY NAME IS LiYan</dt>
+            <dd>I'M A Web Front-End Engineer And I Want To Find A Suitable Job For Me</dd>
+            <dd>Love Of Work, Hard Work And Pursuit</dd>
+            <dd>If You Think I'M OK, Let's Talk</dd>
+            <dd id="recom-btn" class="center-block">
+                <span>Send Me</span>
+                <span>A Message</span>
+            </dd>
+        </dl>
+        <video id="video"  loop autoplay muted src="video/videotest.mp4"  poster="images/load.png"  preload="auto" >
+        </video>
+    </div>
+</header>
+
+<div class="z-shadow container ">
+    <strong class="dislodge" @click="hide"></strong>
+    <div class="col-lg-6 ListBox">
+        <ul class="row list-data">
+            <li>To Contact Me</li>
+            <li>PHONE : 152-0136-0056</li>
+            <li>EMAIL : LiYanJava@126.com</li>
+            <li>GITHUB: WWW.a151.com</li>
+        </ul>
+    </div>
+</div>
+<main class="color-cen clearfix">
+     <div class="main-left col-xs-6 col-md-6 top clearfix">
+         <div class="clearfix">
+        <div class="logo-box fl">
+            <img src="images/logo.png" height="160" width="160" id="cen-logo"/>
+            <!--<img src="images/head.png" alt="logo" class="img-circle"  id="cen-cen-img">-->
+        </div>
+        <i class="vue fl hidden-xs" style="opacity: 0"></i>
+        <em class="ship-left fr visible-lg-* hidden-sm hidden-xs hidden-md col-lg-3"></em>
+        <em class="circle-left fr"></em>
+     </div>
+        <ul class="filters visible-lg-* hidden-sm hidden-xs hidden-md col-lg-4">
+            <li>This is abult</li>
+            <li>my project</li>
+            <li>this is example</li>
+            <li>let's talk</li>
+        </ul>
+    </div>
+    <div class="main-right col-xs-6 col-md-6 clearfix">
+        <em class="circle-right fl"></em>
+        <em class="ship-right fl visible-lg-* hidden-sm hidden-xs hidden-md col-lg-3"></em>
+        <div class="backg fr clearfix">
+           <i class="anj fr hidden-xs" style="opacity: 0"></i>
+        </div>
+        <ul class="filters visible-lg-* hidden-sm hidden-xs hidden-md col-lg-4 hidden-g">
+            <li>This is abult</li>
+            <li>Diligence</li>
+            <li>this is example</li>
+            <li>love  life</li>
+        </ul>
+    </div>
+ </main>
+ <main class="Exhibition col-lg-1 container-fluid row clearfix">
+     <em class="glyphicon glyphicon-menu-left changeLeft" @click="leftChange"></em>
+     <em class="glyphicon glyphicon-menu-right changeRight" @click="rightChange"></em>
+    <section class="cube center-block" id="cube" style="transform-style:preserve-3d ;transform:translateZ(-2000px)">
+        <ul class="box" id="box" style="">
+            <li class="front">
+                <div class="smreact clearfix">
+                    <span class="filel file fl">Angular</span>
+                    <span class="filet file fl">HTML5</span>
+                    <span class="filer file fl">CSS3</span>
+                    <span class="fileU file fl">VUE</span>
+                    <!--<span class="fileA file fl">AJAX</span>-->
+                </div>
+                <div class="box-content">
+                </div>
+                <em class="box-bottom clearfix">
+                    <i class="circleLeft  fl"></i>
+                    <i class="circleCent  fl"></i>
+                    <i class="circleRight fl"></i>
+                    <a href="javascript:;" > HTML FIVE</a>
+                </em>
+                <div class="ophover"></div>
+            </li>
+            <li class="back">
+                <div class="smreact clearfix" id="smreact-g">
+                    <span class="filel file fl">Angular</span>
+                    <span class="filet file fl">HTML5</span>
+                    <span class="filer file fl">CSS3</span>
+                    <span class="fileU file fl">SVG</span>
+                </div>
+                <div class="box-content clearfix"></div>
+                <em class="box-bottom clearfix">
+                    <i class="circleLeft  fl"></i>
+                    <i class="circleCent  fl"></i>
+                    <i class="circleRight fl"></i>
+                    <a href="javascript:;">BootStrap</a>
+                </em>
+            </li>
+            <li class="left">
+                <div class="smreact clearfix">
+                    <span class="filel file fl">Angular</span>
+                    <span class="filet file fl">HTML5</span>
+                    <span class="filer file fl">CSS3</span>
+                    <span class="fileU file fl">SVG</span>
+                    <span class="fileA file fl">AJAX</span>
+                </div>
+                <div class="box-content clearfix">
+
+                </div>
+                <em class="box-bottom clearfix">
+                    <i class="circleLeft  fl"></i>
+                    <i class="circleCent  fl"></i>
+                    <i class="circleRight fl"></i>
+                    <a href="javascript:;"> Aangular JS</a>
+                </em>
+            </li>
+            <li class="right">
+                <div class="smreact clearfix">
+                    <span class="filel file fl">Angular</span>
+                    <span class="filet file fl">HTML5</span>
+                    <span class="filer file fl">CSS3</span>
+                    <span class="fileU file fl">SVG</span>
+                    <span class="fileA file fl">AJAX</span>
+                </div>
+                <div class="box-content clearfix"></div>
+                <em class="box-bottom clearfix">
+                    <i class="circleLeft  fl"></i>
+                    <i class="circleCent  fl"></i>
+                    <i class="circleRight fl"></i>
+                    <a href="javascript:;"> VUE JS</a>
+                </em>
+            </li>
+        </ul>
+    </section>
+ </main>
+ <main class="col-lg-1 col-md-1 container-fluid myInf">
+   <a href="javascript:;">
+    <div class="col-lg-4 col-md-1 col-lg-offset-1 col-md-offset-1  col-xs-offset-1 myPage-1 " >
+        <img src="images/bg-4.jpg" class="mypage01"/>
+        <i class="myUp myUp-super"></i>
+        <p class="matext01"> Check My Project 宿舍超市+</p>
+    </div>
+   </a>
+   <a href="javascript:;">
+     <div class="col-lg-4 col-md-1 col-lg-offset-1 col-md-offset-1 col-xs-offset-1 myPage-1" >
+        <img src="images/bg-3.jpg" class="mypage01"/>
+        <i class="myUp myUp-project"></i>
+        <p class="matext01"> Check My Project 项目经验  </p>
+    </div>
+   </a>
+ </main>
+<main class="col-lg-1 col-md-1 container-fluid myInf myInf-g">
+   <a href="javascript:;">
+    <div class="col-lg-4 col-md-1 col-lg-offset-1 col-md-offset-1  col-xs-offset-1 myPage-1 " >
+        <img src="images/main-bg.jpg" class="mypage01"/>
+        <i class="myUp myUp-award"></i>
+        <p class="matext01"> Check My project 获奖项目 </p>
+    </div>
+   </a>
+   <a href="javascript:;">
+    <div class="col-lg-4 col-md-1 col-lg-offset-1 col-md-offset-1 col-xs-offset-1 myPage-1" >
+        <img src="images/bg-1.jpg" class="mypage01"/>
+        <i class="myUp myUp-other"></i>
+        <p class="matext01"> Check My project 其他作品 </p>
+    </div>
+   </a>
+</main>
+
+<section class="container myMainInfo col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="row myself col-lg-6 col-md-10  col-sm-6 col-xs-12 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-off row">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 Intr-img" >
+           <img src="images/img-one.png" class="img-circle img-thumbnail image-c col-center-block"  >
+        </div>
+         <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12  myText">
+             <h3 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">计算机应用技术(网站方向)</h3>
+             <div class="col-lg-12 col-md-12 col-sm-12 MyCourse">Web前端设计，网页设计与制作，计算机网络， Java语言编程，HTML5高级程序设计，JavaScript程序设计，数据库原理应用，面向对象建模技术，多媒体设计，
+                 操作系统
+             </div>
+         </div>
+    </div>
+    <div class="row myself col-lg-6 col-md-10  col-sm-6 col-xs-12 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-off row">
+        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12  myText">
+            <h3 class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 专业技能</h3>
+            <div class="col-lg-12 col-md-12 col-sm-12" id="skills">
+                	<p class="clearfix">
+                        <a href="javascript:;" class="king fl" style="margin-right: 10px"></a>
+                        <i>JavaScript</i>
+                        <i>CSS3</i>
+                        <i>HTML5</i>
+                        <i class="del">git</i>
+                    </p>
+               	    <p class="clearfix">
+                        <a href="javascript:;" class="king fl" style="margin-right: 10px"></a>
+                        <i>jQuery</i>
+                        <i>Vue</i>
+                        <i>angular</i>
+                        <i class="del">react</i>
+                    </p>
+
+                	<p class="clearfix">
+                        <a href="javascript:;" class="king fl" style="margin-right: 10px"></a>
+                        <i>Ajax</i>
+                        <i>Fetch</i>
+                        <i>Vue-resource</i>
+                        <i class="del">Jsonp</i>
+                    </p>
+
+                    <p class="clearfix">
+                        <a href="javascript:;" class="king fl" style="margin-right: 10px"></a>
+                        <i>BootStrap</i>
+                        <i>gulp</i>
+                        <i>webpack</i>
+                        <i class="del">svn</i>
+                    </p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 Intr-img-odd in-g">
+            <img src="images/bg-5.jpg" class="img-rounded  img-thumbnail image-c col-center-block" >
+        </div>
+    </div>
+    <div class="row myself col-lg-6 col-md-10  col-sm-6 col-xs-12 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-off row">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 Intr-img">
+            <img src="images/bg-2.jpg" class="img-circle img-thumbnail image-c col-center-block" >
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12  myText myText-g">
+            <h3 class="col-lg-12 col-md-12 col-sm-12 col-xs-12">项目经历 </h3>
+            <div class="col-lg-12 col-md-12 col-sm-12 experience">
+                <h5>
+                    <div class="company1">时薪汇信息科技（北京）有限公司</div>
+                    <p>工作描述 : 完成项目一，官网子页的布局与交互</p>
+                    <span>职责 : 负责部分子页面的切图，布局，和H5优化页面。</span>
+                    <p>工作描述 : 完成项目二，后台系统外包项目</p>
+                    <span>职责 : 负责Sign Up和Sign In的布局和部分功能的数据交互。</span>
+                </h5>
+                <h5>
+                    <div class="company2">北京奈锐致晟管理咨询有限公司</div>
+                      <p>工作描述：药品审核项目布局维护</p>
+                      <span>职责：负责项目信息的整理，项目页面布局简单升级</span>
+                </h5>
+            </div>
+        </div>
+    </div>
+    <div class="row myself col-lg-6 col-md-10  col-sm-6 col-xs-12 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-off row">
+        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12  myText">
+            <h3 class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 个人小结</h3>
+            <div class="col-lg-12 col-md-12 col-sm-12 hobby">
+                <p>在校期间：多次获得奖学金，参加北京市志愿者活动和公益活动等。</p>
+                <p>爱好：喜欢打网球，听音乐，唱歌。喜欢看科学类书籍，人际交往。</p>
+                <p>自我评价：热爱生活,踏实，做事态度认真，对新技术的渴望和追求。</p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 Intr-img-odd">
+            <img src="images/bg-6.jpg" class="img-rounded img-thumbnail image-c col-center-block" >
+        </div>
+    </div>
+</section>
+
+<main class="container container-fluid composition col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="text-center">
+              <section class="form col-lg-5 col-md-6">
+                  <h2>Personal Page Composition</h2>
+                  <p class="Introduce">
+                       此页面采用响应式布局，其中BootStrap占据60%，媒体查询40%。HTML5,CSS3其中HTML4占比65%，HTML5占比35%，
+                      背景图为Canvas画布，Icon ,1%使用Animate插件。JS部分为jQuery和Vue混合开发，jQuery占比50% ，Vue占比50%。
+                      在第二版本中采用NodeJS与MySql动态数据接口，配合Vue实现动态数据的渲染
+                  </p>
+                  <a class="btn-more" href="https://github.com/a151/MyWork">MORE</a>
+              </section>
+              <ul class="progressBar col-lg-6 col-md-6 col-lg-offset-1">
+                <li>
+                   <h6 class="composition-name">Bootstrap</h6>
+                   <div class="progress">
+                        <div class="progress-bar pro-one">
+
+                        </div>
+                       <span class="">60%</span>
+                   </div>
+                </li>
+                  <li >
+                      <h6 class="composition-name">Media</h6>
+                      <div class="progress">
+                          <div class="progress-bar" style="width: 40%">
+                              <span class="sr-only"></span>
+                          </div>
+                          <span class="">40%</span>
+                      </div>
+                  </li>
+                  <li >
+                      <h6 class="composition-name">jQuery框架</h6>
+                      <div class="progress">
+                          <div class="progress-bar" style="width: 50%">
+                              <span class="sr-only"></span>
+                          </div>
+                          <span class="">50%</span>
+                      </div>
+                  </li>
+                  <li >
+                      <h6 class="composition-name">Vue框架</h6>
+                      <div class="progress">
+                          <div class="progress-bar" style="width: 50%">
+                              <span class="sr-only"></span>
+                          </div>
+                          <span class="">50%</span>
+                      </div>
+                  </li>
+                  <li >
+                      <h6 class="composition-name">HTML5，CSS3</h6>
+                      <div class="progress">
+                          <div class="progress-bar" style="width: 35%">
+                              <span class="sr-only"></span>
+                          </div>
+                          <span class="">35%</span>
+                      </div>
+                  </li>
+              </ul>
+        </div>
+</main>
+
+<main class="container container-fluid footer col-lg-12 col-md-12 col-sm-12 col-xs-12">
+   <div class="shadow">
+        <footer class="lastContent col-lg-12 text-center">
+               <div>
+                   <i class="glyphicon glyphicon-envelope "></i>
+               </div>
+                <span class="txt ">Send me a message</span>
+              <div class="email-box">
+                <input type="email" placeholder="LiYanJava@126.com" id="InputEmail" class="form-control fl">
+                <button class="btn btn-default fl" id="btnSub">CONTACT</button>
+              </div>
+        </footer>
+        <nav class="making col-lg-12">
+            <div class="mak-ul">
+                    <a href="http://mail.126.com" class="fl email">
+                    </a>
+                    <a href="https://github.com" class="fl github">
+                    </a>
+                    <a href="http://www.bootcss.com" class="fl google">
+                    </a>
+                    <a href="https://wx.qq.com" class="fl weixin">
+                    </a>
+            </div>
+        </nav>
+       <div class="last col-lg-12">
+           <div><span class="privacy">©COPYRIGHT BY LIYAN.PRIVACY POLICY</span><span class="phone">To contact me 152-0136-0056</span> <span class="ema">Email LiYanJava@126.com</span></div>
+       </div>
+   </div>
+</main>
+</div>
+<a href="javascript:;" id="Top" >
+    <i class="glyphicon glyphicon-menu-up"></i>
+</a>
+
+<script src="js/index.js" ></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
